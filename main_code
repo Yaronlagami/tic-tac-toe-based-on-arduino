@@ -37,98 +37,99 @@ void setup(){
   for (int i=36;i<=53;i++){pinMode(i, OUTPUT);}
   newgame();}
 int win1(int num1, int num2, int num3){
-    if (digitalRead(num1)==HIGH && digitalRead(num2)==HIGH && digitalRead(num3)==HIGH){
-    delay(500);
-    int i;
-    lcd.setCursor(0, 0);
-    //        [################]
-    lcd.print("  Player #1 is  ");
-    lcd.setCursor(0,1);
-    //        [################]
-    lcd.print("   the winner   ");    
-    digitalWrite(num1, HIGH);
-    digitalWrite(num2, HIGH);
-    digitalWrite(num3, HIGH);
-    delay(500);
-    digitalWrite(num1, LOW);
-    digitalWrite(num2, LOW);
-    digitalWrite(num3, LOW);
-    delay(500);
-    digitalWrite(num1, HIGH);
-    digitalWrite(num2, HIGH);
-    digitalWrite(num3, HIGH);
-    delay(500);
-    digitalWrite(num1, LOW);
-    digitalWrite(num2, LOW);
-    digitalWrite(num3, LOW);
-    delay(500);
-    digitalWrite(num1, HIGH);
-    digitalWrite(num2, HIGH);
-    digitalWrite(num3, HIGH);
-    delay(500);
-    digitalWrite(num1, LOW);
-    digitalWrite(num2, LOW);
-    digitalWrite(num3, LOW);
-    delay(500);
-    digitalWrite(num1, HIGH);
-    digitalWrite(num2, HIGH);
-    digitalWrite(num3, HIGH);
-    delay(500);
-    digitalWrite(num1, LOW);
-    digitalWrite(num2, LOW);
-    digitalWrite(num3, LOW);
-    delay(500);
-    for(i=36;i<=53;i++){digitalWrite(i, LOW);}
-    newgame();
-    return 1;}
-    else{return 0;}}
+  if (digitalRead(num1)==HIGH && digitalRead(num2)==HIGH && digitalRead(num3)==HIGH){
+  delay(500);
+  int i;
+  lcd.setCursor(0, 0);
+  //        [################]
+  lcd.print("  Player #1 is  ");
+  lcd.setCursor(0,1);
+  //        [################]
+  lcd.print("   the winner   ");    
+  digitalWrite(num1, HIGH);
+  digitalWrite(num2, HIGH);
+  digitalWrite(num3, HIGH);
+  delay(500);
+  digitalWrite(num1, LOW);
+  digitalWrite(num2, LOW);
+  digitalWrite(num3, LOW);
+  delay(500);
+  digitalWrite(num1, HIGH);
+  digitalWrite(num2, HIGH);
+  digitalWrite(num3, HIGH);
+  delay(500);
+  digitalWrite(num1, LOW);
+  digitalWrite(num2, LOW);
+  digitalWrite(num3, LOW);
+  delay(500);
+  digitalWrite(num1, HIGH);
+  digitalWrite(num2, HIGH);
+  digitalWrite(num3, HIGH);
+  delay(500);
+  digitalWrite(num1, LOW);
+  digitalWrite(num2, LOW);
+  digitalWrite(num3, LOW);
+  delay(500);
+  digitalWrite(num1, HIGH);
+  digitalWrite(num2, HIGH);
+  digitalWrite(num3, HIGH);
+  delay(500);
+  digitalWrite(num1, LOW);
+  digitalWrite(num2, LOW);
+  digitalWrite(num3, LOW);
+  delay(500);
+  for(i=36;i<=53;i++){digitalWrite(i, LOW);}
+  newgame();
+  return 1;}
+  else{return 0;}}
 
 int win2(int num1, int num2, int num3){
-    if (digitalRead(num1)==HIGH && digitalRead(num2)==HIGH && digitalRead(num3)==HIGH){
-    delay(500);
-    int i;
-    lcd.setCursor(0, 0);
-    //        [################]
-    lcd.print("  Player #2 is  ");
-    lcd.setCursor(0,1);
-    //        [################]
-    lcd.print("   the winner   ");    
-    digitalWrite(num1, HIGH);
-    digitalWrite(num2, HIGH);
-    digitalWrite(num3, HIGH);
-    delay(500);
-    digitalWrite(num1, LOW);
-    digitalWrite(num2, LOW);
-    digitalWrite(num3, LOW);
-    delay(500);
-    digitalWrite(num1, HIGH);
-    digitalWrite(num2, HIGH);
-    digitalWrite(num3, HIGH);
-    delay(500);
-    digitalWrite(num1, LOW);
-    digitalWrite(num2, LOW);
-    digitalWrite(num3, LOW);
-    delay(500);
-    digitalWrite(num1, HIGH);
-    digitalWrite(num2, HIGH);
-    digitalWrite(num3, HIGH);
-    delay(500);
-    digitalWrite(num1, LOW);
-    digitalWrite(num2, LOW);
-    digitalWrite(num3, LOW);
-    delay(500);
-    digitalWrite(num1, HIGH);
-    digitalWrite(num2, HIGH);
-    digitalWrite(num3, HIGH);
-    delay(500);
-    digitalWrite(num1, LOW);
-    digitalWrite(num2, LOW);
-    digitalWrite(num3, LOW);
-    delay(500);
-    for(i=36;i<=53;i++){digitalWrite(i, LOW);}
-    newgame();
-    return 1;}
-    else{return 0;}}    
+  if (digitalRead(num1)==HIGH && digitalRead(num2)==HIGH && digitalRead(num3)==HIGH){
+  delay(500);
+  int i;
+  lcd.setCursor(0, 0);
+  //        [################]
+  lcd.print("  Player #2 is  ");
+  lcd.setCursor(0,1);
+  //        [################]
+  lcd.print("   the winner   ");    
+  digitalWrite(num1, HIGH);
+  digitalWrite(num2, HIGH);
+  digitalWrite(num3, HIGH);
+  delay(500);
+  digitalWrite(num1, LOW);
+  digitalWrite(num2, LOW);
+  digitalWrite(num3, LOW);
+  delay(500);
+  digitalWrite(num1, HIGH);
+  digitalWrite(num2, HIGH);
+  digitalWrite(num3, HIGH);
+  delay(500);
+  digitalWrite(num1, LOW);
+  digitalWrite(num2, LOW);
+  digitalWrite(num3, LOW);
+  delay(500);
+  digitalWrite(num1, HIGH);
+  digitalWrite(num2, HIGH);
+  digitalWrite(num3, HIGH);
+  delay(500);
+  digitalWrite(num1, LOW);
+  digitalWrite(num2, LOW);
+  digitalWrite(num3, LOW);
+  delay(500);
+  digitalWrite(num1, HIGH);
+  digitalWrite(num2, HIGH);
+  digitalWrite(num3, HIGH);
+  delay(500);
+  digitalWrite(num1, LOW);
+  digitalWrite(num2, LOW);
+  digitalWrite(num3, LOW);
+  delay(500);
+  for(i=36;i<=53;i++){digitalWrite(i, LOW);}
+  newgame();
+  return 1;}
+  else{return 0;}}    
+  
 void loop()
 {
   int count = 0;
